@@ -1,0 +1,268 @@
+.colortherapy_view {
+  background-image: url(/img/colortherapy_bg.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.colortherapy_title::after {
+  display: block;
+  font-family: 'Noto Serif JP', serif;
+  content: '- カラーセラピー -';
+}
+
+.base {
+  width: fit-content;
+  background-color: #fff;
+}
+
+.img {
+  display: block;
+  filter: opacity(30%);
+}
+
+.purpose_text::before {
+  display: block;
+  font-size: 24px;
+  content: '01';
+}
+
+.purpose_text::after {
+  display: block;
+  font-size: 24px;
+  content: '- カラーセラピーとは -';
+}
+
+.method_text::before {
+  display: block;
+  font-size: 24px;
+  content: '02';
+}
+
+.method_text::after {
+  display: block;
+  font-size: 24px;
+  content: '- 方法 -';
+}
+
+.price_text::before {
+  display: block;
+  font-size: 24px;
+  content: '03';
+}
+
+.price_text::after {
+  display: block;
+  font-size: 24px;
+  content: '- 価格 -';
+}
+
+.purpose_pic {
+  position: relative;
+  width: fit-content;
+}
+
+.purpose_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+  font-size: 100px;
+  color: #000;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.method_pic {
+  position: relative;
+  width: fit-content;
+}
+
+.method_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+  font-size: 100px;
+  color: #000;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.price_text {
+  font-size: 100px;
+  color: #000;
+  text-align: center;
+}
+
+.method_container {
+  margin: 115px 0 357px 0;
+}
+
+.method_container > * + * {
+  margin-top: 30px;
+}
+
+.color_c {
+  display: block;
+  max-width: 80%;
+  margin: 0 auto;
+  font-size: 20px;
+  color: #000;
+  text-align: center;
+}
+
+.color_content {
+  max-width: 80%;
+  margin: 85px auto 344px;
+  font-size: 20px;
+  color: #000;
+  text-align: center;
+}
+
+p.color_c {
+  padding-bottom: 50px;
+}
+
+.color_c,
+.color_content {
+  line-height: 3;
+}
+
+.price {
+  padding: 31px 34px;
+  border: solid 5px #846e1c;
+}
+
+.price-inner {
+  padding: 46px 56px;
+  border: solid 2px #846e1c;
+}
+
+.price-wrapp {
+  display: flex;
+  gap: 90px;
+  margin-top: 99px;
+}
+
+.price-container {
+  width: 33.333%;
+}
+
+.price-contents {
+  display: block;
+  padding: 36px 0;
+  font-size: 20px;
+  line-height: 2;
+  text-align: center;
+  border-top: solid 1px #846e1c;
+  border-bottom: solid 1px #846e1c;
+}
+
+.price-explain {
+  padding: 28px 0;
+  font-size: 20px;
+  line-height: 2;
+}
+
+/* レスポンシブ */
+@media (max-width: 1024px) {
+  .price-wrapp {
+    flex-direction: column;
+  }
+
+  .price-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .price-contents {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 599px) {
+  .wrapper {
+    width: 85%;
+  }
+
+  .sub_title {
+    font-size: 40px;
+  }
+
+  .sub_title::before,
+  .sub_title::after {
+    font-size: 14px;
+  }
+
+  .color_content,
+  .color_c,
+  .price-explain,
+  .price-contents {
+    font-size: 16px;
+  }
+
+  .price-wrapp {
+    flex-direction: column;
+    padding: 16px 16px;
+  }
+
+  .price-container {
+    width: 100%;
+  }
+
+  .price {
+    padding: 10px 11px;
+  }
+
+  .price-inner {
+    padding: 0 15px;
+  }
+
+  .price_text {
+    margin-top: 27px;
+  }
+
+  .price-wrapp {
+    gap: 30px;
+    margin-top: 25px;
+  }
+
+  .price-contents {
+    width: 55%;
+    margin: 0 auto;
+  }
+
+  .price-contents {
+    padding: 6px;
+  }
+
+  .color_content {
+    margin: 12px 0 98px 0;
+  }
+
+  .img {
+    margin: 34px 0 35px;
+  }
+
+  .color_c,
+  .color_content {
+    width: 80%;
+    margin: 0 auto;
+    line-height: 2;
+    letter-spacing: 1.5px;
+  }
+
+  .price-explain {
+    line-height: 2;
+    letter-spacing: 1px;
+  }
+
+  .method_container {
+    margin: 22px 0 73px 0;
+  }
+
+  p.color_c {
+    margin-bottom: 34px;
+  }
+}

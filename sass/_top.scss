@@ -1,0 +1,172 @@
+//ロード画面
+#logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  padding-top: 150px;
+}
+
+.cls-1 {
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 1500;
+  stroke-dashoffset: 1500;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 20;
+  //stroke-width: 50;
+}
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+  background-color: #aa6637;
+  transition: 1s ease;
+
+  &._invisible {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  &_title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1000;
+    width: 800px;
+    height: 600px;
+    font-family: 'MyFont', serif;
+    transform: translate(-50%, -50%);
+  }
+
+  &_logo {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+//ヒーローヘッダー
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+  background-color: #000;
+
+  &_wrapper {
+    display: flex;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+
+  &_container {
+    width: 50%;
+    min-height: 100vh;
+    overflow: hidden;
+
+    @media screen and(max-width: 599px) {
+      width: 100%;
+    }
+  }
+
+  &_main,
+  &_main2 {
+    width: 100%;
+    min-height: 100vh;
+    transform: scale3d(1.1, 1.1, 1.1);
+    object-fit: cover;
+
+    &.active {
+      animation: scaleImg 4.2s ease 0s 1 alternate backwards;
+    }
+  }
+
+  &_pconly {
+    @media screen and(max-width: 599px) {
+      display: none;
+    }
+  }
+}
+
+@keyframes scaleImg {
+  0% {
+    filter: opacity(0%);
+    transform: scale3d(1, 1, 1);
+  }
+
+  45% {
+    filter: opacity(100%);
+  }
+
+  100% {
+    filter: opacity(100%);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+}
+
+//ヒーローヘッダー アニメーション後
+.header {
+  &_concept {
+    position: fixed;
+    top: 45%;
+    left: 75%;
+    z-index: 90;
+    width: 50%;
+    transform: translate(-50%, -50%);
+
+    @media screen and(max-width: 599px) {
+      top: 50%;
+      left: 50%;
+      width: 100%;
+    }
+
+    &-inner {
+      font-family: 'Hiragino Mincho Pro', serif;
+      font-size: 70px;
+      line-height: 1.1;
+      color: #fff;
+      text-align: center;
+
+      @media screen and(max-width: 599px) {
+        font-size: 50px;
+      }
+
+      & > span {
+        font-size: 60px;
+
+        @media screen and(max-width: 599px) {
+          font-size: 35px;
+        }
+
+        &::before {
+          content: '「';
+        }
+
+        &::after {
+          content: '」';
+        }
+      }
+    }
+  }
+
+  &_background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 80;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+    filter: opacity(50%);
+  }
+}

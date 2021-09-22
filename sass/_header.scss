@@ -1,0 +1,88 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  color: #f1f1f1;
+  visibility: hidden;
+  opacity: 0;
+  transition: 2s;
+
+  &.is-show {
+    z-index: 9999;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &.color-change {
+    color: #5f4522;
+  }
+
+  &_logo {
+    max-width: 252px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(229deg) brightness(130%) contrast(100%) drop-shadow(0 0 0.1em #fdfdfd) drop-shadow(0 5px 2px #000);
+    transition: ease 1s;
+
+    &.white {
+      filter: drop-shadow(0 0 0.1em #fdfdfd) drop-shadow(0 5px 2px #000);
+    }
+  }
+
+  &_inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 33px;
+  }
+
+  &_nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 30px;
+
+    & > * + * {
+      margin-left: 2rem;
+    }
+
+    @media screen and(max-width: 599px) {
+      display: none;
+    }
+
+    &-item {
+      z-index: 90;
+      display: block;
+      overflow: hidden;
+      font-size: 2.1875rem;
+
+      & a {
+        line-height: 79px;
+        text-shadow: 0 0 0.1em #fdfdfd, 0 3px 2px #000;
+
+        & .hover {
+          display: none;
+        }
+
+        &:hover .normal {
+          display: none;
+        }
+
+        &:hover .hover {
+          display: inline-block;
+          animation: invisible 0.8s ease 0s forwards;
+        }
+      }
+    }
+  }
+}
+
+@keyframes invisible {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

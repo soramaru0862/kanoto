@@ -1,0 +1,148 @@
+.profile_view {
+  background-image: url(/img/profile_bg.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.profile_title {
+  &::after {
+    content: '- プロフィール -';
+  }
+}
+
+.profile-container > h2,
+.certification > h2,
+.award_history > h2 {
+  font-size: 6.25rem;
+  text-align: center;
+}
+
+.profile_photo {
+  display: block;
+  max-width: 250px;
+  margin: 0 auto 100px;
+}
+
+.profile-container-title::after {
+  display: block;
+  font-size: 2rem;
+  line-height: 1.7;
+  content: '- 浅野間 仁美 -';
+}
+
+.certification_title,
+.award_history-title {
+  margin-top: 100px;
+}
+
+.certification_title::after {
+  display: block;
+  font-size: 2rem;
+  line-height: 2.5;
+  content: '資格';
+}
+
+.award_history-title::after {
+  display: block;
+  font-size: 2rem;
+  line-height: 2.5;
+  content: '受賞歴';
+}
+
+.profile_text {
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.profile-container > p,
+.certification > p {
+  text-align: center;
+}
+
+.line {
+  margin: 100px auto;
+}
+
+.award_history1_2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  text-align: center;
+}
+
+.award_history3_4 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.award_history1 {
+  margin-right: 60px;
+  margin-bottom: 70px;
+}
+
+.award_history3 {
+  margin-right: 60px;
+  margin-bottom: 70px;
+}
+
+/* ここからタブレット版 */
+@media (max-width: 1024px) {
+  .wrap {
+    width: 85%;
+  }
+}
+
+/* ここからスマホ版 */
+@media (max-width: 599px) {
+  .wrap {
+    width: 85%;
+  }
+
+  .profile-container > h2,
+  .certification > h2,
+  .award_history > h2 {
+    font-size: 40px;
+  }
+
+  .sub_title {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .sub_title::before {
+    font-size: 14px;
+  }
+
+  .sub_title::after {
+    font-size: 14px;
+  }
+
+  .frame-inner {
+    width: 15%;
+  }
+
+  .profile_photo {
+    width: 44%;
+  }
+
+  .profile_text {
+    width: 90%;
+    margin: 20px;
+    font-size: 16px;
+  }
+
+  .certification_text {
+    font-size: 14px;
+  }
+
+  .profile-container {
+    width: 100%;
+    margin-bottom: 70px;
+  }
+
+  .award_history_text {
+    font-size: 14px;
+  }
+}
