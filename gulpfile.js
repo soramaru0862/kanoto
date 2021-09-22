@@ -37,9 +37,9 @@ gulp.task('sass-watch', () => gulp
 
 // ホットリロード
 gulp.task('browser-sync', () => {
-  return  browserSync.init({
+  return browserSync.init({
     server: {
-      baseDir: './',
+      baseDir: './'
     },
     port: 8080,
     reloadOnRestart: true
@@ -51,8 +51,9 @@ gulp.task('reload', (done) => {
   done()
 })
 
-gulp.task('build', () => {
+gulp.task('build', (done) => {
   gulp.task('sass')
+  done()
 })
 
 
@@ -65,4 +66,4 @@ gulp.task('watch', (done) => {
 
 gulp.task('default',
   gulp.parallel('watch', 'browser-sync')
-  )
+)

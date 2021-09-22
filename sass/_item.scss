@@ -13,13 +13,13 @@
 .item-container > h2::after {
   display: block;
   font-size: 1.25rem;
-  content: "- 作品一覧 -";
+  content: '- 作品一覧 -';
 }
 
 .ordermade > h2::after {
   display: block;
   font-size: 1.25rem;
-  content: "- オーダーメイド -";
+  content: '- オーダーメイド -';
 }
 
 .costumejewelry > h2 {
@@ -36,7 +36,7 @@
 .gift > h2::after {
   display: block;
   font-size: 1.25rem;
-  content: "- ギフト -";
+  content: '- ギフト -';
 }
 
 .grid {
