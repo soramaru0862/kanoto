@@ -27,6 +27,12 @@
 }
 
 /* タブ切り替えのCSS */
+#tab1 ~ .tab_lab1,
+#tab2 ~ .tab_lab2 {
+  color: #afafaf;
+  cursor: pointer;
+}
+
 #tab1:checked ~ .panels #area1 {
   display: block;
 }
@@ -37,10 +43,16 @@
 
 #tab1:checked ~ .tab_lab1 {
   color: #242424;
+  border-top: 2px solid #846e1c;
+  border-bottom: 2px solid #846e1c;
+
 }
 
 #tab2:checked ~ .tab_lab2 {
   color: #242424;
+  border-top: 2px solid #846e1c;
+  border-bottom: 2px solid #846e1c;
+
 }
 
 .panel {
@@ -70,8 +82,8 @@ input[name='check'] {
   padding: 24px 0;
   font-size: 24px;
   text-align: center;
-  border-top: 1px solid #846e1c;
-  border-bottom: 1px solid #846e1c;
+  border-top: 1px solid #afafaf;
+  border-bottom: 1px solid #afafaf;
 }
 
 .tab_lab1 {

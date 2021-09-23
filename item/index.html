@@ -3,45 +3,62 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>「Kanoto-カノト-」Official Website</title>
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
   <header id="header" class="header is-show">
     <div class="header_inner">
-      <a href="/index.html"><img class="header_logo" src="/img/kanoto_br.png" alt=""></a>
+      <a href="../index.html"><img class="header_logo" src="../img/kanoto_br.png" alt=""></a>
       <nav>
         <ul class="header_nav">
-          <li class="header_nav-item"><a href="/concept/index.html">
+          <li class="header_nav-item"><a href="../concept/index.html">
             <span class="normal">Concept</span>
             <span class="hover">コンセプト</span>
           </a></li>
-          <li class="header_nav-item"><a href="/profile/index.html">
+          <li class="header_nav-item"><a href="../profile/index.html">
             <span class="normal">Profile</span>
             <span class="hover">プロフィール</span>
           </a></li>
-          <li class="header_nav-item"><a href="/item/index.html">
+          <li class="header_nav-item"><a href="../item/index.html">
             <span class="normal">Item</span>
             <span class="hover">アイテム</span>
           </a></li>
-          <li class="header_nav-item"><a href="/colortherapy/index.html">
+          <li class="header_nav-item"><a href="../colortherapy/index.html">
             <span class="normal">Colortherapy</span>
             <span class="hover">カラーセラピー</span>
           </a></li>
-          <li class="header_nav-item"><a href="/access/index.html">
+          <li class="header_nav-item"><a href="../access/index.html">
             <span class="normal">Access</span>
             <span class="hover">アクセス</span>
           </a></li>
         </ul>
       </nav>
+
+      <!--ハンバーガーメニュー-->
+      <div class="zdo_drawer_button" id="js-hamburger">
+        <span class="zdo_drawer_bar zdo_drawer_bar1"></span>
+        <span class="zdo_drawer_bar zdo_drawer_bar2"></span>
+        <span class="zdo_drawer_bar zdo_drawer_bar3"></span>
+        <span class="zdo_drawer_menu_text zdo_drawer_text">MENU</span>
+        <span class="zdo_drawer_close zdo_drawer_text">CLOSE</span>
+      </div>
+
+      <!-- 背景(半透明) -->
+      <div class="dig_black-bg" id="js-hamburger-black-bg"></div>
+
     </div>
   </header>
 
   <section class="first_view item_view">
     <div class="first_view-inner">
       <div class="first_view-white"></div>
-      <img src="/img/main_frame.png" alt="" class="first_view-frame">
+      <img src="../img/main_frame.png" alt="" class="first_view-frame">
     </div>
     <div class="first_view-title">
       <h2 class="item_title page_title">Item</h2>
@@ -53,7 +70,7 @@
     <div class="item-container">
       <h2 class="sub_title">Item</h2>
       <div class="frame">
-        <img src="/img/frame1.png" alt=""><img src="/img/frame2.png" alt="">
+        <img src="../img/frame1.png" alt=""><img src="../img/frame2.png" alt="">
       </div>
       <p class="sub_text">Kanotoのコスチュームジュエリーは作品自体の色のバランスだけでなく、手に取っていただくお客様と作品との調和を大切にしています。
         <br>
@@ -66,7 +83,7 @@
         是非一度お悩みをお聞かせください。</p>
     </div>
     <div class="frame">
-      <img src="/img/frame3.png" alt=""><img src="/img/frame4.png" alt="">
+      <img src="../img/frame3.png" alt=""><img src="../img/frame4.png" alt="">
     </div>
 
     <!-- ここまで4つ角に縁をつける -->
@@ -114,6 +131,16 @@
           <p>ネックレス</p>
         </div>
       </div>
+      <!--モーダル用-->
+      <div id="modal" class="modal">
+        <div class="modal-inner">
+          <div id="modal_close" class="modal-close">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+        <div id="modal_background" class="modal-background"></div>
+      </div>
+
     </div>
     <div class="insta-link">
       <a href="https://www.instagram.com/kanotomode/?hl=ja" target="_blank">
@@ -155,21 +182,21 @@
 
     <footer>
       <div class="footer_inner">
-        <img src="/img/footer_frame_upper.png" alt="" class="footer_frame">
+        <img src="../img/footer_frame_upper.png" alt="" class="footer_frame">
         <div class="footer_title">
           <h3>Contact</h3>
         </div>
         <p class="footer_text">コスチュームジュエリーやカラーセラピーに関するご相談は<br>インスタグラム トップのメッセージよりお気軽にお送りください</p>
         <div class="footer_instagram">
           <a href="https://www.instagram.com/kanotomode/?hl=ja" target="_blank">
-            <img class="footer_instagram-img" src="/img/footer_instagram.png" alt="">
+            <img class="footer_instagram-img" src="../img/footer_instagram.png" alt="">
             <p>インスタグラムはこちらから</p>
           </a>
         </div>
 
         <p>ご相談フォーム例</p>
         <div class="footer_container">
-          <img class="footer_sp-logo" src="/img/footer_sp_icon.png" alt="">
+          <img class="footer_sp-logo" src="../img/footer_sp_icon.png" alt="">
           <div class="footer_balloon">
             <div class="footer_balloon-1">
               <p>オーダメイドジュエリーの<br>デザインや予算の相談がしたい。</p>
@@ -192,12 +219,14 @@
           <p class="footer_text">または</p>
           <a href="mailto:toiawase.kanoto@gmail.com">toiawase.kanoto@gmail.com</a>
         </div>
-        <img src="/img/footer_frame_lower.png" alt="" class="footer_frame">
+        <img src="../img/footer_frame_lower.png" alt="" class="footer_frame">
       </div>
     </footer>
   </div>
 
-  <script src="/js/scroll.js"></script>
+  <script src="../js/scroll.js"></script>
+  <script src="../js/modal.js"></script>
+  <script src="../js/hamburger.js"></script>
 </body>
 
 </html>

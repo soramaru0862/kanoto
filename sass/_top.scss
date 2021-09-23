@@ -7,6 +7,14 @@
   max-width: 100%;
   height: auto;
   padding-top: 150px;
+
+  @media screen and(max-width: 599px) {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    width: 40%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .cls-1 {

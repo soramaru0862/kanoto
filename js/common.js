@@ -28,9 +28,9 @@ setTimeout(() => {
 // ヒーローヘッダー
 if (window.matchMedia('(max-width: 768px)').matches) {
   const images = [
-    './img/img-1.png',
-    './img/img-2.png',
-    './img/img-3.png'
+    './img/images-1.png',
+    './img/images-2.png',
+    './img/images-3.png'
   ]
 
   let currentIndex = -1
