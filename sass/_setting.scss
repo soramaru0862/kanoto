@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'MyFont';
-  src: url(/fonts/ReadingRegular.ttf);
+  src: url(../fonts/ReadingRegular.ttf);
 }
 
 html {
@@ -97,10 +97,10 @@ ruby > rt {
   text-align: center;
 
   &_text {
-    text-align: center;
     padding: 2rem 5rem;
     font-size: 1.25rem;
     line-height: 2;
+    text-align: center;
 
     @media screen and(max-width: 599px) {
       padding: 1rem 2rem;
@@ -108,10 +108,10 @@ ruby > rt {
   }
 
   &_title {
-    text-align: center;
     font-family: 'MyFont', serif;
     font-size: 6.25rem;
     line-height: 0.9;
+    text-align: center;
   }
 }
 

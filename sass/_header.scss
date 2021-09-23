@@ -59,21 +59,21 @@
     padding-right: 30px;
 
     @media screen and(max-width: 599px) {
-      flex-direction: column;
       position: fixed;
       top: 0;
-      margin-top: 100px;
       left: 55%;
-      transform: translate(-50%, 0);
-      opacity: 0;
+      flex-direction: column;
+      margin-top: 100px;
       visibility: hidden;
-      transition: .8s;
+      opacity: 0;
+      transition: 0.8s;
+      transform: translate(-50%, 0);
     }
 
     &.active {
-      opacity: 1;
-      visibility: visible;
       z-index: 2000;
+      visibility: visible;
+      opacity: 1;
     }
 
     & > * + * {
@@ -255,8 +255,13 @@
 
 /* +++ Default Button Color +++ */
 .zdo_drawer_button {
+  display: none;
   color: #f1f1f1;
   transition: 1s;
+
+  @media screen and(max-width: 599px) {
+    display: block;
+  }
 
   &.color-change {
     color: #5f4522;

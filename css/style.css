@@ -49,7 +49,7 @@ button {
 
 @font-face {
   font-family: "MyFont";
-  src: url(/fonts/ReadingRegular.ttf);
+  src: url(../fonts/ReadingRegular.ttf);
 }
 html {
   height: -webkit-fill-available;
@@ -140,10 +140,10 @@ ruby > rt {
   text-align: center;
 }
 .sub_text {
-  text-align: center;
   padding: 2rem 5rem;
   font-size: 1.25rem;
   line-height: 2;
+  text-align: center;
 }
 @media screen and (max-width: 599px) {
   .sub_text {
@@ -151,10 +151,10 @@ ruby > rt {
   }
 }
 .sub_title {
-  text-align: center;
   font-family: "MyFont", serif;
   font-size: 6.25rem;
   line-height: 0.9;
+  text-align: center;
 }
 
 .page_title::after {
@@ -385,21 +385,21 @@ ruby > rt {
 }
 @media screen and (max-width: 599px) {
   .header_nav {
-    flex-direction: column;
     position: fixed;
     top: 0;
-    margin-top: 100px;
     left: 55%;
-    transform: translate(-50%, 0);
-    opacity: 0;
+    flex-direction: column;
+    margin-top: 100px;
     visibility: hidden;
+    opacity: 0;
     transition: 0.8s;
+    transform: translate(-50%, 0);
   }
 }
 .header_nav.active {
-  opacity: 1;
-  visibility: visible;
   z-index: 2000;
+  visibility: visible;
+  opacity: 1;
 }
 .header_nav > * + * {
   margin-left: 2rem;
@@ -568,8 +568,14 @@ ruby > rt {
 
 /* +++ Default Button Color +++ */
 .zdo_drawer_button {
+  display: none;
   color: #f1f1f1;
   transition: 1s;
+}
+@media screen and (max-width: 599px) {
+  .zdo_drawer_button {
+    display: block;
+  }
 }
 .zdo_drawer_button.color-change {
   color: #5f4522;
@@ -750,7 +756,7 @@ footer a {
 .concept_wrapper {
   width: 100%;
   height: 100vh;
-  background-image: url("/img/concept_top@2x.png");
+  background-image: url(../img/concept_top@2x.png);
   background-attachment: fixed;
   background-position: bottom;
 }
@@ -825,7 +831,7 @@ footer a {
 }
 
 .profile_view {
-  background-image: url(/img/profile_bg.png);
+  background-image: url(../img/profile_bg.png);
   background-position: center;
   background-size: cover;
 }
@@ -970,7 +976,7 @@ footer a {
   }
 }
 .item_view {
-  background-image: url(/img/item_bg.png);
+  background-image: url(../img/item_bg.png);
   background-position: center;
   background-size: cover;
 }
@@ -1150,7 +1156,7 @@ footer a {
 }
 
 .colortherapy_view {
-  background-image: url(/img/colortherapy_bg.png);
+  background-image: url(../img/colortherapy_bg.png);
   background-position: center;
   background-size: cover;
 }
@@ -1417,7 +1423,7 @@ p.color_c {
   }
 }
 .access_view {
-  background-image: url(/img/access_bg.png);
+  background-image: url(../img/access_bg.png);
   background-position: center;
   background-size: cover;
 }
