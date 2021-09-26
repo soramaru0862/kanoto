@@ -92,11 +92,11 @@ body {
   }
 }
 
-ruby > rt {
+ruby rt {
   font-size: 1rem;
 }
 @media screen and (max-width: 599px) {
-  ruby > rt {
+  ruby rt {
     font-size: 0.5rem;
   }
 }
@@ -409,7 +409,7 @@ ruby > rt {
 }
 @media screen and (max-width: 599px) {
   .header_logo {
-    max-width: 100px;
+    max-width: 80px;
   }
 }
 .header_logo.white {
@@ -544,8 +544,8 @@ ruby > rt {
   right: 15px;
   z-index: 300;
   display: block;
-  width: 42px;
-  height: 26px;
+  width: 32px;
+  height: 20px;
   padding: 0;
   text-align: center;
   letter-spacing: 0.1em;
@@ -948,10 +948,10 @@ footer a {
   .concept_wrapper {
     width: 100%;
     height: 100%;
-    padding-top: 56.25%;
+    padding-top: 53.84%;
+    background-repeat: no-repeat;
     background-position: top;
     background-size: contain;
-    background-repeat: no-repeat;
   }
 }
 
@@ -964,7 +964,7 @@ footer a {
 }
 @media screen and (max-width: 599px) {
   .main {
-    top: 3%;
+    top: 2%;
     right: 0;
   }
 }
@@ -976,9 +976,10 @@ footer a {
 }
 @media screen and (max-width: 599px) {
   .main_visual-title {
-    font-size: 3rem;
     margin-bottom: 0;
     margin-left: 20px;
+    font-size: 3rem;
+    line-height: 1;
   }
 }
 
