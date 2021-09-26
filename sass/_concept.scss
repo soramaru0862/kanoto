@@ -5,6 +5,15 @@
   background-image: url(../img/concept_top@2x.png);
   background-attachment: fixed;
   background-position: bottom;
+
+  @media screen and(max-width: 599px) {
+    width: 100%;
+    height: 100%;
+    padding-top: 56.25%;
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
 
 .main {
@@ -13,29 +22,47 @@
   right: 3%;
   width: fit-content;
   color: #fff;
+
+  @media screen and(max-width: 599px) {
+    top: 3%;
+    right: 0;
+  }
 }
 
 .main_visual-title {
   margin-bottom: 40px;
   font-family: 'MyFont', serif;
   font-size: 7.5rem;
+
+  @media screen and(max-width: 599px) {
+    font-size: 3rem;
+    margin-bottom: 0;
+    margin-left: 20px;
+  }
 }
 
 .main_visual-text {
   font-size: 2.375rem;
   line-height: 1.7;
+
+  @media screen and(max-width: 599px) {
+    font-size: 1rem;
+  }
 }
 
 .kanoto_title {
   &::after {
     display: block;
-    font-size: 1.5rem;
     content: '- カノト -';
   }
 }
 
 .soutache {
   margin-bottom: 24rem;
+
+  @media screen and(max-width: 599px) {
+    margin-bottom: 80px;
+  }
 }
 
 .soutache_wrapper {
@@ -43,20 +70,37 @@
   flex-direction: row-reverse;
   align-items: center;
   justify-content: space-evenly;
+
+  @media screen and(max-width: 599px) {
+    flex-direction: column;
+  }
 }
 
 .soutache_container {
   width: 50%;
+
+  @media screen and(max-width: 599px) {
+    width: 100%;
+    margin-bottom: 40px;
+  }
 }
 
 .soutache_text {
   display: block;
   width: 80%;
   margin: 0 auto;
+
+  @media screen and(max-width: 599px) {
+    width: 100%;
+  }
 }
 
 .soutache_image-wrapper {
   width: 50%;
+
+  @media screen and(max-width: 599px) {
+    width: 100%;
+  }
 
   & > img {
     display: block;
@@ -72,11 +116,14 @@
   width: fit-content;
   margin: 0 auto 4rem;
 
+  @media screen and(max-width: 599px) {
+    margin-bottom: 24px;
+  }
+
   &::after {
     display: block;
     width: fit-content;
     margin: 0 auto;
-    font-size: 1.5rem;
     content: '- ソウタシエ -';
   }
 }

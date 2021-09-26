@@ -2,23 +2,30 @@
   background-image: url(../img/item_bg.png);
   background-position: center;
   background-size: cover;
+
+  @media screen and(max-width: 599px) {
+    background-position: top;
+    background-size: contain;
+  }
 }
 
 .item_title {
   &::after {
     content: '- アイテム -';
+
+    @media screen and(max-width: 599px) {
+      font-size: 1rem;
+    }
   }
 }
 
 .item-container > h2::after {
   display: block;
-  font-size: 1.25rem;
   content: '- 作品一覧 -';
 }
 
 .ordermade > h2::after {
   display: block;
-  font-size: 1.25rem;
   content: '- オーダーメイド -';
 }
 
@@ -29,13 +36,12 @@
 
 .costumejewelry > h2::after {
   display: block;
-  font-size: 1.25rem;
   content: '- コスチュームジュエリー -';
 }
 
 .gift > h2::after {
   display: block;
-  font-size: 1.25rem;
+  line-height: 2;
   content: '- ギフト -';
 }
 
@@ -45,11 +51,31 @@
   gap: 24px;
   margin-top: 60px;
   text-align: center;
+
+  @media screen and(max-width: 599px) {
+    gap: 15px;
+  }
 }
 
 .item {
-  width: calc(33.333% - 24px);
+  width: calc(33.333% - 16px);
   cursor: pointer;
+
+  @media screen and(max-width: 599px) {
+    width: calc(50% - 7.5px);
+  }
+
+  &_top {
+    @media screen and(max-width: 599px) {
+      width: 100%;
+    }
+  }
+
+  & > p {
+    @media screen and(max-width: 599px) {
+      font-size: 1rem;
+    }
+  }
 
   &.is-show {
     position: fixed;
@@ -60,6 +86,10 @@
     max-width: 700px;
     cursor: auto;
     transform: translate(-50%, -50%);
+
+    @media screen and(max-width: 599px) {
+      width: 80%;
+    }
   }
 }
 
@@ -67,9 +97,15 @@
 .insta {
   width: 30px;
   height: auto;
+
+  @media screen and(max-width: 599px) {
+    width: 20px;
+    height: 100%;
+  }
 }
 
 .arrow {
+  display: block;
   width: 120px;
   height: auto;
 }
@@ -77,10 +113,15 @@
 .more {
   padding-right: 17px;
   padding-left: 8px;
+
+  @media screen and(max-width: 599px) {
+    font-size: 1rem;
+  }
 }
 
 .instagram {
   display: flex;
+  align-items: center;
 }
 
 .insta-link {
@@ -95,13 +136,18 @@
 /* ここからオーダーメイドのCSS */
 
 .ordermade > p {
-  font-size: 20px;
   color: #000;
 }
 
 .ordermade-present {
   margin: 50px;
+  font-size: 1.25rem;
   text-align: center;
+
+  @media screen and(max-width: 599px) {
+    margin: 20px 0;
+    font-size: 1rem;
+  }
 }
 
 .ordermade-container {
@@ -109,11 +155,25 @@
   flex-wrap: wrap;
   gap: 20px;
   align-items: center;
+
+  @media screen and(max-width: 599px) {
+    flex-direction: column;
+  }
 }
 
 .ordermade-container > img,
 .ordermade-container > p {
   width: calc(50% - 10px);
+
+  @media screen and(max-width: 599px) {
+    width: 100%;
+  }
+}
+
+.ordermade-container > img {
+  @media screen and(max-width: 599px) {
+    width: 80%;
+  }
 }
 
 /* ここからギフトのCSS */
@@ -159,6 +219,11 @@
     padding: 50px;
     background-color: #fdfdfd;
     transform: translate(-50%, -50%);
+
+    @media screen and(max-width: 599px) {
+      width: 90%;
+      height: 60%;
+    }
   }
 
   &-close {

@@ -2,11 +2,20 @@
   background-image: url(../img/profile_bg.png);
   background-position: center;
   background-size: cover;
+
+  @media screen and(max-width: 599px) {
+    background-size: contain;
+    background-position: top;
+  }
 }
 
 .profile_title {
   &::after {
     content: '- プロフィール -';
+
+    @media screen and(max-width: 599px) {
+      font-size: 1rem;
+    }
   }
 }
 
@@ -25,7 +34,6 @@
 
 .profile-container-title::after {
   display: block;
-  font-size: 2rem;
   line-height: 1.7;
   content: '- 浅野間 仁美 -';
 }
@@ -37,16 +45,14 @@
 
 .certification_title::after {
   display: block;
-  font-size: 2rem;
   line-height: 2.5;
-  content: '資格';
+  content: '- 資格 -';
 }
 
 .award_history-title::after {
   display: block;
-  font-size: 2rem;
   line-height: 2.5;
-  content: '受賞歴';
+  content: '- 受賞歴 -';
 }
 
 .profile_text {
@@ -69,22 +75,40 @@
   justify-content: center;
   margin-top: 70px;
   text-align: center;
+
+  @media screen and(max-width: 599px) {
+    gap: 15px;
+    margin-top: 30px;
+  }
 }
 
 .award_history3_4 {
   display: flex;
   justify-content: center;
   text-align: center;
+
+  @media screen and(max-width: 599px) {
+    gap: 15px;
+    margin-top: 30px;
+  }
 }
 
 .award_history1 {
   margin-right: 60px;
   margin-bottom: 70px;
+
+  @media screen and(max-width: 599px) {
+    margin: 0;
+  }
 }
 
 .award_history3 {
   margin-right: 60px;
   margin-bottom: 70px;
+
+  @media screen and(max-width: 599px) {
+    margin: 0;
+  }
 }
 
 /* ここからタブレット版 */
@@ -96,31 +120,10 @@
 
 /* ここからスマホ版 */
 @media (max-width: 599px) {
-  .wrap {
-    width: 85%;
-  }
-
   .profile-container > h2,
   .certification > h2,
   .award_history > h2 {
-    font-size: 40px;
-  }
-
-  .sub_title {
-    font-size: 14px;
-    text-align: center;
-  }
-
-  .sub_title::before {
-    font-size: 14px;
-  }
-
-  .sub_title::after {
-    font-size: 14px;
-  }
-
-  .frame-inner {
-    width: 15%;
+    font-size: 2.5rem;
   }
 
   .profile_photo {

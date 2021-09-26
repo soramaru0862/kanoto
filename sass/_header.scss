@@ -32,6 +32,10 @@
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(229deg) brightness(130%) contrast(100%) drop-shadow(0 0 0.1em #fdfdfd) drop-shadow(0 5px 2px #000);
     transition: ease 1s;
 
+    @media screen and(max-width: 1024px) {
+      max-width: 170px;
+    }
+
     @media screen and(max-width: 599px) {
       max-width: 100px;
     }
@@ -90,6 +94,10 @@
       overflow: hidden;
       font-size: 2.1875rem;
 
+      @media screen and(max-width: 1024px) {
+        font-size: 1.25rem;
+      }
+
       & a {
         line-height: 79px;
         text-shadow: 0 0 0.1em #fdfdfd, 0 3px 2px #000;
@@ -104,7 +112,8 @@
         }
 
         &:hover .hover {
-          display: inline-block;
+          display: block;
+          width: fit-content;
           animation: invisible 0.8s ease 0s forwards;
         }
       }
