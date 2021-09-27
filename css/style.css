@@ -712,13 +712,13 @@ footer a {
   padding: 1rem 0;
   margin: 45px 0;
   color: #fff;
-  background: #5f4522;
+  background: #cc9f80;
   border: none;
   outline: none;
   transition: 0.6s ease all;
 }
 .footer_instagram p:hover {
-  color: #5f4522;
+  color: #cc9f80;
   background: #fffefa;
 }
 .footer_instagram p:hover::before, .footer_instagram p:hover::after {
@@ -732,7 +732,7 @@ footer a {
   width: 0;
   height: 2px;
   content: "";
-  background: #5f4522;
+  background: #cc9f80;
   transition: 0.3s ease all;
 }
 .footer_instagram p::after {
@@ -909,9 +909,9 @@ footer a {
 .footer_telnumber {
   padding: 5px 15px;
   color: #fff;
-  background-color: #5f4522;
+  background-color: #cc9f80;
   border-radius: 0 15px 0 15px;
-  box-shadow: 0 5px 0 #3f2d11;
+  box-shadow: 0 5px 0 #8c6d58;
 }
 .footer_telnumber::after {
   margin-left: 10px;
@@ -925,10 +925,10 @@ footer a {
 
 .footer_mailadress {
   padding: 5px 15px;
-  background-color: #5f4522;
+  background-color: #cc9f80;
   border-radius: 0 15px 0 15px;
   color: #fff;
-  box-shadow: 0 5px 0 #3f2d11;
+  box-shadow: 0 5px 0 #8c6d58;
 }
 .footer_mailadress::after {
   display: inline;
