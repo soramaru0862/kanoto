@@ -60,12 +60,12 @@ if (window.matchMedia('(max-width: 768px)').matches) {
   })
 } else if (window.matchMedia('(min-width:769px)').matches) {
   const imgs = [
-    './img/images1.jpg',
-    './img/images2.jpg',
-    './img/images3.jpg',
-    './img/images4.jpg',
-    './img/images5.jpg',
-    './img/images6.jpg'
+    './img/images1.png',
+    './img/images2.png',
+    './img/images3.png',
+    './img/images4.png',
+    './img/images5.png',
+    './img/images6.png'
   ]
 
   let currentIndex = -2
