@@ -1,0 +1,22 @@
+.page_top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: none;
+  width: 160px;
+
+  &.show {
+    display: block;
+    animation: showbtn ease 1.2s forwards;
+  }
+}
+
+@keyframes showbtn {
+  from {
+    filter: opacity(0);
+  }
+
+  to {
+    filter: opacity(100%);
+  }
+}
