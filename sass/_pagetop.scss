@@ -2,12 +2,17 @@
   position: fixed;
   right: 20px;
   bottom: 20px;
+  z-index: 500;
   display: none;
   width: 160px;
 
+  @media screen and(max-width: 599px) {
+    width: 80px;
+  }
+
   &.show {
     display: block;
-    animation: showbtn ease 1.2s forwards;
+    animation: showbtn ease 1.2s;
   }
 }
 

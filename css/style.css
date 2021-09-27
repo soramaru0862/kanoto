@@ -399,7 +399,7 @@ ruby rt {
 }
 .header_logo {
   max-width: 252px;
-  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(229deg) brightness(130%) contrast(100%) drop-shadow(0 0 0.1em #fdfdfd) drop-shadow(0 5px 2px #000);
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(229deg) brightness(130%) contrast(100%);
   transition: ease 1s;
 }
 @media screen and (max-width: 1024px) {
@@ -413,7 +413,7 @@ ruby rt {
   }
 }
 .header_logo.white {
-  animation: color 1s linear forwards;
+  animation: color 1s ease forwards;
 }
 .header_inner {
   display: flex;
@@ -471,7 +471,6 @@ ruby rt {
 }
 .header_nav-item a {
   line-height: 79px;
-  text-shadow: 0 0 0.1em #fdfdfd, 0 3px 2px #000;
   transition: 1s ease;
 }
 .header_nav-item a .hover {
@@ -496,10 +495,10 @@ ruby rt {
 }
 @keyframes color {
   0% {
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(229deg) brightness(130%) contrast(100%) drop-shadow(0 0 0.1em #fdfdfd) drop-shadow(0 5px 2px #000) opacity(100%);
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(229deg) brightness(130%) contrast(100%) opacity(100%);
   }
   100% {
-    filter: drop-shadow(0 0 0.1em #fdfdfd) drop-shadow(0 5px 2px #000) opacity(100%);
+    filter: invert(0) sepia(0) opacity(100%);
   }
 }
 .dig_black-bg {
@@ -544,8 +543,8 @@ ruby rt {
   right: 15px;
   z-index: 300;
   display: block;
-  width: 32px;
-  height: 20px;
+  width: 43px;
+  height: 26px;
   padding: 0;
   text-align: center;
   letter-spacing: 0.1em;
@@ -650,6 +649,9 @@ ruby rt {
   background-color: #5f4522;
 }
 
+footer {
+  margin-top: 60px;
+}
 @media screen and (max-width: 599px) {
   footer {
     font-size: 1rem;
@@ -996,15 +998,6 @@ footer a {
 .kanoto_title::after {
   display: block;
   content: "- カノト -";
-}
-
-.soutache {
-  margin-bottom: 24rem;
-}
-@media screen and (max-width: 599px) {
-  .soutache {
-    margin-bottom: 80px;
-  }
 }
 
 .soutache_wrapper {
@@ -1964,12 +1957,18 @@ input[name=check] {
   position: fixed;
   right: 20px;
   bottom: 20px;
+  z-index: 500;
   display: none;
   width: 160px;
 }
+@media screen and (max-width: 599px) {
+  .page_top {
+    width: 80px;
+  }
+}
 .page_top.show {
   display: block;
-  animation: showbtn ease 1.2s forwards;
+  animation: showbtn ease 1.2s;
 }
 
 @keyframes showbtn {

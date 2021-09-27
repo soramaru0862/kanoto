@@ -29,7 +29,7 @@
 
   &_logo {
     max-width: 252px;
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(229deg) brightness(130%) contrast(100%) drop-shadow(0 0 0.1em #fdfdfd) drop-shadow(0 5px 2px #000);
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(229deg) brightness(130%) contrast(100%);
     transition: ease 1s;
 
     @media screen and(max-width: 1024px) {
@@ -41,7 +41,7 @@
     }
 
     &.white {
-      animation: color 1s linear forwards;
+      animation: color 1s ease forwards;
     }
   }
 
@@ -100,7 +100,7 @@
 
       & a {
         line-height: 79px;
-        text-shadow: 0 0 0.1em #fdfdfd, 0 3px 2px #000;
+        //text-shadow: 0 0 0.1em #fdfdfd, 0 3px 2px #000;
         transition: 1s ease;
 
         & .hover {
@@ -133,11 +133,12 @@
 
 @keyframes color {
   0% {
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(229deg) brightness(130%) contrast(100%) drop-shadow(0 0 0.1em #fdfdfd) drop-shadow(0 5px 2px #000) opacity(100%);
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(229deg) brightness(130%) contrast(100%) opacity(100%);
   }
 
   100% {
-    filter: drop-shadow(0 0 0.1em #fdfdfd) drop-shadow(0 5px 2px #000) opacity(100%);
+    //filter: drop-shadow(0 0 0.1em #fdfdfd) drop-shadow(0 5px 2px #000) opacity(100%);
+    filter: invert(0) sepia(0) opacity(100%);
   }
 }
 
@@ -185,8 +186,8 @@
   right: 15px;
   z-index: 300;
   display: block;
-  width: 32px;
-  height: 20px;
+  width: 43px;
+  height: 26px;
   padding: 0;
   text-align: center;
   letter-spacing: 0.1em;
