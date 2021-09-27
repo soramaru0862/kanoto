@@ -63,14 +63,14 @@ footer {
       padding: 1rem 0;
       margin: 45px 0;
       color: #fff;
-      background: #333c5f;
+      background: #5f4522;
       border: none;
       outline: none;
       transition: 0.6s ease all;
 
       &:hover {
-        color: #333c5f;
-        background: #fff;
+        color: #5f4522;
+        background: #fffefa;
 
         &::before,
         &::after {
@@ -87,7 +87,7 @@ footer {
         width: 0;
         height: 2px;
         content: '';
-        background: #333c5f;
+        background: #5f4522;
         transition: 0.3s ease all;
       }
 
@@ -274,9 +274,10 @@ footer {
 
 .footer_telnumber {
   padding: 5px 15px;
-  background-color: #ccc;
+  color: #fff;
+  background-color: #5f4522;
   border-radius: 0 15px 0 15px;
-  box-shadow: 0 5px 0 #aaa;
+  box-shadow: 0 5px 0 #3f2d11;
 
   &::after {
     margin-left: 10px;
@@ -292,9 +293,10 @@ footer {
 
 .footer_mailadress {
   padding: 5px 15px;
-  background-color: #ccc;
+  background-color: #5f4522;
   border-radius: 0 15px 0 15px;
-  box-shadow: 0 5px 0 #aaa;
+  color: #fff;
+  box-shadow: 0 5px 0 #3f2d11;
 
   &::after {
     display: inline;
