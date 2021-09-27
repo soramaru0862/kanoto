@@ -2,19 +2,20 @@
 
 const modal = document.getElementById('modal')
 const modalShow = document.querySelectorAll('.item')
+const modalItem = document.querySelectorAll('.item_img')
 const close = document.getElementById('modal_close')
 const modalBackground = document.getElementById('modal_background')
 
-modalShow.forEach(item => {
-  item.addEventListener('click', () => {
-    item.classList.add('is-show')
+for (let i = 0; i < 9; i++) {
+  modalShow[i].addEventListener('click', () => {
+    modalItem[i].classList.add('is-show')
     modal.classList.add('is-show')
     modalBackground.classList.add('is-show')
   })
-})
+}
 
 close.addEventListener('click', () => {
-  modalShow.forEach(item => {
+  modalItem.forEach(item => {
     item.classList.remove('is-show')
   })
   modal.classList.remove('is-show')
@@ -22,10 +23,9 @@ close.addEventListener('click', () => {
 })
 
 modalBackground.addEventListener('click', () => {
-  modalShow.forEach(item => {
+  modalItem.forEach(item => {
     item.classList.remove('is-show')
   })
   modal.classList.remove('is-show')
   modalBackground.classList.remove('is-show')
-
 })

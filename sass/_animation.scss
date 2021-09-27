@@ -1,0 +1,12 @@
+.animation {
+  visibility: hidden;
+  opacity: 0;
+  transition: 1.5s;
+  transform: translateY(50px);
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

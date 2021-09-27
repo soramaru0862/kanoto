@@ -77,18 +77,24 @@
     }
   }
 
-  &.is-show {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    z-index: 2000;
-    width: 100%;
-    max-width: 700px;
-    cursor: auto;
-    transform: translate(-50%, -50%);
+  &_img {
+    display: none;
 
-    @media screen and(max-width: 599px) {
-      width: 80%;
+    &.is-show {
+      display: block;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      z-index: 2000;
+      width: 100%;
+      max-width: 700px;
+      cursor: auto;
+      transform: translate(-50%, -50%);
+      animation: modalImg 1.2s forwards;
+
+      @media screen and(max-width: 599px) {
+        width: 80%;
+      }
     }
   }
 }
@@ -251,5 +257,15 @@
     height: 100%;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+
+@keyframes modalImg {
+  from {
+    filter: opacity(0);
+  }
+
+  to {
+    filter: opacity(100%);
   }
 }
