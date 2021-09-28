@@ -149,12 +149,13 @@ footer {
       padding: 2rem 3rem;
       font-size: 1.25rem;
       background: #fff;
-      filter: drop-shadow(0 0 3px #000);
+      filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.5));
       border-radius: 20px;
+      will-change: filter;
 
       @media screen and(max-width: 599px) {
-        font-size: 0.875rem;
         padding: 10px;
+        font-size: 0.875rem;
       }
 
       &::before {
@@ -181,12 +182,13 @@ footer {
       margin: 2rem 0;
       font-size: 1.25rem;
       background: #fff;
-      filter: drop-shadow(0 0 3px #000);
+      filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.5));
       border-radius: 20px;
+      will-change: filter;
 
       @media screen and(max-width: 599px) {
-        font-size: 0.875rem;
         padding: 10px;
+        font-size: 0.875rem;
       }
 
       &::before {
@@ -199,9 +201,9 @@ footer {
         border-right: 25px solid #fff;
 
         @media screen and(max-width: 599px) {
-          transform: translate(0, -10%);
-          border-right: 20px solid #fff;
           left: -28px;
+          border-right: 20px solid #fff;
+          transform: translate(0, -10%);
         }
       }
     }
@@ -214,12 +216,13 @@ footer {
       margin-bottom: 2rem;
       font-size: 1.25rem;
       background: #fff;
-      filter: drop-shadow(0 0 3px #000);
+      filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.5));
       border-radius: 20px;
+      will-change: filter;
 
       @media screen and(max-width: 599px) {
-        font-size: 0.875rem;
         padding: 10px;
+        font-size: 0.875rem;
       }
 
       &::before {
@@ -293,9 +296,9 @@ footer {
 
 .footer_mailadress {
   padding: 5px 15px;
+  color: #fff;
   background-color: #cc9f80;
   border-radius: 0 15px 0 15px;
-  color: #fff;
   box-shadow: 0 5px 0 #8c6d58;
 
   &::after {
