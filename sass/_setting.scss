@@ -157,6 +157,12 @@ ruby rt {
 }
 
 .page_title {
+  font-size: 10rem;
+
+  @media screen and(max-width: 599px) {
+    font-size: 2.5rem;
+  }
+
   &::after {
     display: block;
     font-family: 'Noto Serif JP', serif;

@@ -4,8 +4,8 @@
   background-size: cover;
 
   @media screen and(max-width: 599px) {
-    background-size: contain;
     background-position: top;
+    background-size: contain;
   }
 }
 
@@ -14,7 +14,7 @@
     content: '- プロフィール -';
 
     @media screen and(max-width: 599px) {
-      font-size: 1rem;
+      font-size: 0.875rem;
     }
   }
 }
